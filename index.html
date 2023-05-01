@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+
+    <!---------------------------------------------------------CSS-FILE-------------------------------------------------------------------------->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!---------------------------------------------------------HEADER-------------------------------------------------------------------------->
+
+    <header class="header" data-header>
+        <div class="container">
+            <h2><a href="#" class="logo">
+                    <div class="exp-text">
+                        <p><span class="logo-name">Y</span><span class="exp-logo-name">Yamuna</span></p>
+                    </div>
+                </a></h2>
+            <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+
+                <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" class="close-icon"><i class="fa-solid fa-xmark"></i></ion-icon>
+            </button>
+
+            <nav class="navbar container">
+                <ul class="navbar-list">
+
+                    <li>
+                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="navbar-link" data-nav-link>About</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#services" class="navbar-link" data-nav-link>Service</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="cv.html" class="cv-button">Download CV</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!---------------------------------------------------------YAMUNA-PROFILE-------------------------------------------------------------------------->
+
+    <section class="yam" id="home">
+        <div class="container">
+
+            <div class="yam-banner">
+
+                <img src="profile.gif" class="img-cover">
+
+                <div class="pro pro-1">
+                    <img src="html.png">
+                </div>
+
+                <div class="pro pro-2">
+                    <img src="css3.png">
+                </div>
+
+                <div class="pro pro-3">
+                    <img src="JavaScript.png">
+                </div>
+                <div class="pro pro-4">
+                    <img src="Python.png">
+                </div>
+
+            </div>
+
+            <div class="yam-content">
+
+                <h3>Hello, i'm</h3>
+                <h1 class="yam-title">Yamuna M</h1>
+
+                <p class="yam-text">
+                    Fullstack | Android app | developer
+                </p>
+
+                <div class="btn-group">
+                    <button onclick="downloadFile()" target="_blank" class="resume-button">RESUME</button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!---------------------------------------------------------ABOUT-------------------------------------------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p class="about-subtitle">A creative and innovative Entry-level Architect, passionate about building
+                        designs
+                        and advanced construction solutions</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Internship')">Internship</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li><span>SSC-2018</span><br>JR.Cambridgge ICSE</li>
+                            <li><span>HSC-2022</span><br>Royal Park Matriculation hr.sec </li>
+                            <li><span>EEE-2024</span><br>Sona College Of Technology</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Internship">
+                        <ul>
+                            <li><span>JAN-2022</span><br>Android App Developement</li>
+                            <li><span>JUL-2022</span><br>Fullstack Developement</li>
+                            <li><span>DEC-2022</span><br>Data Atructures And Algorithm</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------SKILLS-------------------------------------------------------------------------->
+
+    <section class="section skills" id="skills">
+        <div class="container">
+
+            <h1 class="h2 head-title">My Skills</h1>
+            <p class="section-subtitle">I create successful responsive websites that are fast, easy to use, and built
+                with
+                best practices which is Developed by hours and hours of work </p>
+
+            <ul class="skills-list">
+
+                <li class="skills-item">
+                    <div class="wrapper" style="width: 90%">
+                        <h3 class=" skills-title">HTML</h3>
+
+                        <data class="skills-data" value="90">90%</data>
+                    </div>
+
+                    <div class="skills-progress-box">
+                        <div class="skills-progress" style="width: 90%"></div>
+                    </div>
+                </li>
+
+                <li class="skills-item">
+                    <div class="wrapper" style="width: 85%">
+                        <h3 class="skills-title">CSS</h3>
+
+                        <data class="skills-data" value="85">85%</data>
+                    </div>
+
+                    <div class="skills-progress-box">
+                        <div class="skills-progress" style="width: 85%"></div>
+                    </div>
+                </li>
+
+                <li class="skills-item">
+                    <div class="wrapper" style="width: 78%">
+                        <h3 class="skills-title">JavaScript</h3>
+
+                        <data class="skills-data" value="78">78%</data>
+                    </div>
+
+                    <div class="skills-progress-box">
+                        <div class="skills-progress" style="width: 78%"></div>
+                    </div>
+                </li>
+
+                <li class="skills-item">
+                    <div class="wrapper" style="width: 70%">
+                        <h3 class="skills-title">Python</h3>
+
+                        <data class="skills-data" value="70">70%</data>
+                    </div>
+
+                    <div class="skills-progress-box">
+                        <div class="skills-progress" style="width: 70%"></div>
+                    </div>
+                </li>
+
+                <li class="skills-item">
+                    <div class="wrapper" style="width: 60%">
+                        <h3 class="skills-title">3DX</h3>
+
+                        <data class="skills-data" value="60">60%</data>
+                    </div>
+
+                    <div class="skills-progress-box">
+                        <div class="skills-progress" style="width: 60%"></div>
+                    </div>
+                </li>
+
+                <li class="skills-item">
+                    <div class="wrapper" style="width: 52%">
+                        <h3 class="skills-title">Java</h3>
+
+                        <data class="skills-data" value="62">52%</data>
+                    </div>
+
+                    <div class="skills-progress-box">
+                        <div class="skills-progress" style="width: 62%"></div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </section>
+
+    <!---------------------------------------------------------SERVICES------------------------------------------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="h2 head-title">My Service</h1>
+            <P class="section-subtitle">The ability to evaluate and manipulate designs as per client expectation.<br>
+                Have a
+                strong focus on energy-efficient designs and open to contributing designs to a design firm's project
+                repository
+            </p>
+            <div id="services-list">
+                <div>
+                    <img src="freelance.png">
+                    <h2>Freelancer</h2>
+                    <p>I'm always blown away by the selection of services and phenomenal talent that can be found on
+                        freelancing.<br>
+                        I can make a creative, professional website for you. My strategy of doing work is to gain client
+                        satisfaction of ensuring deadline, maintain budget and fulfill quality aspects.
+
+                    </p>
+                    <a href="#" id="learnmore">learn more</a>
+                </div>
+                <div>
+                    <img src="marketing.png">
+                    <h2>Business Operation</h2>
+                    <p> I Have Extensive Experience in Email Research, Mailing List Development, Web Research, Leads
+                        Generation,
+                        LinkedIn Recruiting, CRM Contacts Cleaned Up & Update and Lead Research.<br> As well as wide
+                        knowledge on
+                        various email and lead research & development tools.</p>
+                    <a href="#" id="learnmore">learn more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!---------------------------------------------------------CONTACT-------------------------------------------------------------------------->
+    <div id="contact">
+        <div class="contact-info">
+            <h1 class="h2 head-title">Drop a message</h1>
+            <p class="section-subtitle">I'm interested in freelance opportunities especially ambitious projects.<br> If
+                you
+                have
+                other request or question, don't hesitate to convey</p>
+            <div class="container-contact">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="firstname" placeholder="Your Name">
+
+                <label for="mail">Email</label>
+                <input type="ema" id="mail" placeholder="Your Email">
+
+                <label for="sub">Subject</label>
+                <input type="text" id="subject" placeholder="Your Subject">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message " style="height:200px"></textarea>
+
+                <input id="messubmit" type="submit" value="Submit" onclick="myalert()">
+            </div>
+
+        </div>
+    </div>
+    <!---------------------------------------------------------FOOTER-------------------------------------------------------------------------->
+
+    <footer class="footer">
+        <div class="container">
+
+            <p class="copyright">&copy; 2023<a href="#" class="copyright-link"> myamuna1406</a>. All Rights Reseverd</p>
+            <ul class="footer-list">
+                <li><a target="_blank" href="#" class="footer-link">Terms & Condition</a></li>
+                <li><a target="_blank" href="#" class="footer-ico">Privacy Policy</a></li>
+
+                <li><a target="_blank" href="https://www.instagram.com/myamuna1406/" id="ico-connect"><img src="contact1.png"></a></li>
+                <li><a target="_blank" href="https://github.com/myamuna1406" id="ico-connect"><img
+                            src="contact2.png"></a></li>
+                <li><a target="_blank" href = "mailto: yamuna.20eee@sonatech.ac.in" id="ico-connect"><img
+                            src="contact3.png"></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/yamuna-m-a8760b250" id="ico-connect"><img
+                            src="contact4.png"></a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+
+
+
+<!--*******************************************************JavaScript*************************************************************************-->
+
+<script>
+    'use strict';
+
+    /*******************************************************NavBar-Button*************************************************************************/
+
+    const header = document.querySelector("[data-header]");
+    const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
+
+    navToggleBtn.addEventListener("click", function () {
+        header.classList.toggle("nav-active");
+        this.classList.toggle("active");
+    });
+
+    const navbarLinks = document.querySelectorAll("[data-nav-link]");
+
+    for (let i = 0; i < navbarLinks.length; i++) {
+        navbarLinks[i].addEventListener("click", function () {
+            header.classList.toggle("nav-active");
+            navToggleBtn.classList.toggle("active");
+        });
+    }
+</script>
+
+<!--*******************************************************Font-icons*************************************************************************-->
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!--*******************************************************About-Changeover*************************************************************************-->
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+
+    function downloadFile() {
+
+        window.location.href = "resume.jpg";
+
+    }
+
+</script>
+<script>
+    function myalert(){
+        alert("Try Sometime Later!!...")
+    }
+</script>
+
+
+
+</body>
+
+</html>
+
