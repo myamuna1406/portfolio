@@ -10,36 +10,31 @@
             font-family: 'Poppins', sans-serif;
         }
         div{
-            display: block; 
-            align-items: center; 
-            justify-content: center; 
-            text-align: center;
-            margin-top:8%;
-            width: 40%;
-            margin-left: auto;
-            margin-right: auto;
- 
-        
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
-        a{
-            letter-spacing: 2px;
+        a{letter-spacing: 2px;
             font-weight: 600;
             margin-block-start: 25px;
-            background-color:  #00AEB9;
+            text-decoration: none;
+            color: white;
+            background-color: #6dc2fe;
             padding: 10px;
             height: 50px;
             width: 150px;
-            text-decoration: none;
-            color: white;
-            border-radius: 5px;
+            border-radius: 2px;}
+        
+        a:is(:hover, :focus) {
+    background-color: transparent;
+    outline: none;
+    color: black;
+    border: 3px solid;
+    border-color: #6dc2fe;
         }
-
-a:is(:hover, :focus) {
-            background-color: transparent;
-            outline: none;
-            color:black;
-            border: 3px solid  #00AEB9;
-}
     </style>
 </head>
 <body>
